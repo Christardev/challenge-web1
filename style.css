@@ -123,6 +123,7 @@ ul li a{
     border: 1px solid rgba(109, 107, 107, 0.548);
     margin: 0 20px;
     box-shadow: 3px 3px 10px rgb(78, 78, 78);
+    border-radius: 20px;
 }
 .head{
     color: rgb(199, 81, 199);
@@ -150,7 +151,7 @@ ul li a{
 
  }
  .contact>div[class="map"]{
-    background-color: rgb(255, 255, 255)255, 255)255, 255)255, 255)255, 255);
+    background-color: rgb(255, 255, 255);
  }
  .form,.map{
     margin: 0 10px;
@@ -180,7 +181,23 @@ ul li a{
     margin: 0;
     padding: 0;
     margin-bottom: 20px;
+    outline: none;
+    
  }
+ input+label{
+    display: block;
+    pointer-events: none;
+ }
+ */
+
+ input+label:focus~label{
+    border-color:rgb(0, 0, 0);
+    top: -15px;
+    display: inline-block;
+ 
+
+ }
+  
  form  fieldset label{
     margin: 0;
     padding: 0;
@@ -195,6 +212,7 @@ ul li a{
  form  fieldset textarea{
     border: 2px solid rgb(208, 233, 255);
     width: 99%;
+    outline: none;
  }
 
  button{
